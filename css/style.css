@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* CSS Document */
 body {
   width: 100%;
@@ -87,12 +88,15 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 100; /* 重なり順を一番上にする */
+  z-index: 100;
+  /* 重なり順を一番上にする */
   cursor: pointer;
 }
 
 /* ハンバーガーメニューのアイコン */
-.drawer_open span, .drawer_open span:before, .drawer_open span:after {
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
   content: '';
   display: block;
   height: 5px;
@@ -115,18 +119,18 @@ body {
 }
 
 /* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer_input:checked ~ .drawer_open span {
+#drawer_input:checked~.drawer_open span {
   background: rgba(255, 255, 255, 0);
 }
 
 /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer_input:checked ~ .drawer_open span::before {
+#drawer_input:checked~.drawer_open span::before {
   bottom: 0;
   transform: rotate(45deg);
   background: #fff;
 }
 
-#drawer_input:checked ~ .drawer_open span::after {
+#drawer_input:checked~.drawer_open span::after {
   top: 0;
   transform: rotate(-45deg);
   background: #fff;
@@ -138,7 +142,8 @@ body {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 100%; /* メニューを画面の外に飛ばす */
+  left: 100%;
+  /* メニューを画面の外に飛ばす */
   z-index: 99;
   transition: .5s;
   background-color: rgba(53, 45, 255, 0.8);
@@ -162,8 +167,9 @@ body {
 }
 
 /* アイコンがクリックされたらメニューを表示 */
-#drawer_input:checked ~ .nav_content {
-  left: 45%; /* メニューを画面に入れる */
+#drawer_input:checked~.nav_content {
+  left: 45%;
+  /* メニューを画面に入れる */
 }
 
 /* 見出し */
@@ -244,9 +250,12 @@ body {
 
 .about_button {
   display: block;
-  width: 200px; /* ボタン幅 */
-  border: 2px solid #fff; /* 線幅・種類・色 */
-  color: #fff; /* 文字色 */
+  width: 200px;
+  /* ボタン幅 */
+  border: 2px solid #fff;
+  /* 線幅・種類・色 */
+  color: #fff;
+  /* 文字色 */
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -267,9 +276,12 @@ body {
 
 .blue_button {
   display: block;
-  width: 200px; /* ボタン幅 */
-  background-color: #352dff; /* 線幅・種類・色 */
-  color: #fff; /* 文字色 */
+  width: 200px;
+  /* ボタン幅 */
+  background-color: #352dff;
+  /* 線幅・種類・色 */
+  color: #fff;
+  /* 文字色 */
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -300,7 +312,8 @@ body {
 }
 
 .slider img {
-  width: 100%; /*スライダー内の画像を横幅100%に*/
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
   height: auto;
   margin: 0 10px;
   padding: 0 10px;
@@ -348,14 +361,14 @@ body {
 }
 
 .list_headline {
-	display: flex;
-	flex: 1;
-	margin-left: 100px;
+  display: flex;
+  flex: 1;
+  margin-left: 100px;
 }
 
 .title {
-	flex: 1;
-	text-align:left;
+  flex: 1;
+  text-align: left;
 }
 
 /* index.html contact recruit */
@@ -363,7 +376,8 @@ body {
   width: 50%;
 }
 
-.contact_banner, .recruit_banner {
+.contact_banner,
+.recruit_banner {
   display: flex;
   background-image: url("../img/index/banner_texture.png");
 }
@@ -382,7 +396,8 @@ body {
   opacity: 0;
 }
 
-.contact_banner.animated,.recruit_banner.animated {
+.contact_banner.animated,
+.recruit_banner.animated {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
@@ -409,9 +424,12 @@ body {
 
 .banner_button {
   display: block;
-  width: 200px; /* ボタン幅 */
-  border: 2px solid #fff; /* 線幅・種類・色 */
-  color: #fff; /* 文字色 */
+  width: 200px;
+  /* ボタン幅 */
+  border: 2px solid #fff;
+  /* 線幅・種類・色 */
+  color: #fff;
+  /* 文字色 */
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -436,9 +454,12 @@ body {
   font-size: 20px;
   text-align: center;
   align-items: center;
-  position: absolute; /* 位置指定 */
-  top: 50%; /* 親要素の半分下にずらす */
-  left: 25%; /* 親要素の半分右にずらす */
+  position: absolute;
+  /* 位置指定 */
+  top: 50%;
+  /* 親要素の半分下にずらす */
+  left: 25%;
+  /* 親要素の半分右にずらす */
 }
 
 .text_button .index_headline {
@@ -588,7 +609,8 @@ body {
   margin: 0 auto;
 }
 
-.company_table th, .company_table td {
+.company_table th,
+.company_table td {
   border: 1px solid #ccc;
   padding: 20px;
 }
@@ -639,7 +661,7 @@ body {
   height: 25px;
 }
 
-.pagenation > * + * {
+.pagenation>*+* {
   margin-left: 8px;
 }
 
@@ -656,13 +678,13 @@ body {
 }
 
 .works_list ul {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
-	justify-content: center;
+  justify-content: center;
 }
 
 .works_list ul li {
-	margin: 5px;
+  margin: 5px;
   width: calc(50% - 10px);
 }
 
@@ -686,8 +708,8 @@ body {
 }
 
 .works_description {
-	text-align: left;
-	margin: 30px auto;
+  text-align: left;
+  margin: 30px auto;
 }
 
 /* works-page.html */
@@ -862,15 +884,24 @@ body {
 
 .select_box:after {
   position: absolute;
-  top: 30%; /* 矢印の位置 */
-  right: 15px; /* 矢印の位置 */
-  width: 10px; /* 矢印の大きさ */
-  height: 10px; /* 矢印の大きさ */
-  border-top: 3px solid #58504A; /* 矢印の線 */
-  border-right: 3px solid #58504A; /* 矢印の線 */
-  -webkit-transform: rotate(135deg); /* 矢印の傾き */
-  transform: rotate(135deg); /* 矢印の傾き */
-  pointer-events: none; /* 矢印部分もクリック可能にする */
+  top: 30%;
+  /* 矢印の位置 */
+  right: 15px;
+  /* 矢印の位置 */
+  width: 10px;
+  /* 矢印の大きさ */
+  height: 10px;
+  /* 矢印の大きさ */
+  border-top: 3px solid #58504A;
+  /* 矢印の線 */
+  border-right: 3px solid #58504A;
+  /* 矢印の線 */
+  -webkit-transform: rotate(135deg);
+  /* 矢印の傾き */
+  transform: rotate(135deg);
+  /* 矢印の傾き */
+  pointer-events: none;
+  /* 矢印部分もクリック可能にする */
   content: "";
 }
 
@@ -892,9 +923,12 @@ body {
 
 .wantedly_link {
   display: block;
-  width: 350px; /* ボタン幅 */
-  background-color: #352dff; /* 線幅・種類・色 */
-  color: #fff; /* 文字色 */
+  width: 350px;
+  /* ボタン幅 */
+  background-color: #352dff;
+  /* 線幅・種類・色 */
+  color: #fff;
+  /* 文字色 */
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -1001,14 +1035,14 @@ footer {
   height: 100%;
 }
 
-.table-center > div {
+.table-center>div {
   display: table-cell;
   vertical-align: middle;
   position: relative;
   text-align: center;
 }
 
-.table-center > div p {
+.table-center>div p {
   color: #fff;
   text-shadow: 0 0px 5px rgba(0, 0, 0, 2);
   text-transform: uppercase;
@@ -1031,32 +1065,41 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
+
   .logo img {
     width: 250px;
     height: auto;
     margin-left: 30px;
     top: 0;
   }
+
   .date {
     padding-left: 0px;
   }
+
   .headline {
     margin-top: 60px;
   }
+
   /* index.html スマホ版 */
   .about_contents {
     display: block;
     text-align: center;
     background-color: #352dff;
   }
+
   .about_contents img {
     width: 500px;
     height: auto;
   }
+
   .about_button {
-    width: 200px; /* ボタン幅 */
-    border: 2px solid #fff; /* 線幅・種類・色 */
-    color: #fff; /* 文字色 */
+    width: 200px;
+    /* ボタン幅 */
+    border: 2px solid #fff;
+    /* 線幅・種類・色 */
+    color: #fff;
+    /* 文字色 */
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -1065,84 +1108,103 @@ footer {
     display: block;
     margin: 0 auto;
   }
+
   .text_button {
     width: 100%;
     display: block;
     margin-bottom: 20px;
     justify-content: center;
   }
+
   .link_button {
     display: block;
     margin: 10px auto 0 auto;
     width: 60px;
     justify-content: center;
   }
+
   .list {
     border-top: 1px solid #AAAAAA;
     width: 80%;
     text-align: center;
     margin: 0 auto;
   }
+
   .news_list li a {
     display: flex;
     justify-content: space-around;
   }
+
   .news_list .date {
     flex: 1;
   }
+
   .news_list p {
     flex: 1;
   }
+
   .contact_button {
     width: 45px;
     height: 40px;
     padding-top: 5px;
     margin-bottom: 3px;
   }
+
   .recruit_button {
     width: 30px;
     height: 40px;
     padding-top: 5px;
     margin-bottom: 3px;
   }
+
   .link_button span p {
     font-size: 10px;
   }
+
   .nav_list li {
     font-size: 20px;
   }
+
   .index_works p {
     width: 80%;
     margin: 20px 0 10px 70px;
   }
+
   .president_message {
     width: 80%;
     display: block;
     margin: 0 auto 200px auto;
   }
+
   .message {
     width: 90%;
     margin: 10px auto;
   }
+
   .post_name {
     margin-top: 30px;
   }
+
   .president_message img {
     display: block;
     margin: 0 auto;
     width: 80%
   }
+
   .about_service {
     display: block;
     justify-content: center;
     margin-bottom: 200px;
   }
+
   .service_contents {
     margin: 30px auto;
   }
+
   .about_culture {
     margin-bottom: 200px;
   }
+
   .culture_contents {
     display: flex;
     flex-flow: column;
@@ -1150,27 +1212,34 @@ footer {
     width: 100%;
     justify-content: space-between;
   }
+
   .contents_reverse {
     flex-direction: column-reverse;
   }
+
   .culture_contents img {
     width: 90%;
     margin: 0 auto;
   }
-  .contact_banner, .recruit_banner {
+
+  .contact_banner,
+  .recruit_banner {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     background-image: url("../img/index/banner_texture.png");
   }
+
   .contact_banner {
     flex-direction: column-reverse
   }
+
   .form {
     width: fit-content;
     margin: auto;
   }
+
   .form-item {
     padding-left: 14px;
     padding-right: 14px;
@@ -1178,15 +1247,18 @@ footer {
     padding-bottom: 16px;
     flex-wrap: wrap;
   }
+
   .form-item-label {
     max-width: inherit;
     display: flex;
     align-items: center;
     font-size: 15px;
   }
+
   .form-item-label.isMsg {
     margin-top: 0;
   }
+
   .form-item-label-required {
     border-radius: 4px;
     padding-top: 4px;
@@ -1194,6 +1266,7 @@ footer {
     width: 32px;
     font-size: 10px;
   }
+
   .form-item-input {
     margin-left: 0;
     margin-top: 18px;
@@ -1201,6 +1274,7 @@ footer {
     flex: inherit;
     font-size: 15px;
   }
+
   .form-item-textarea {
     margin-top: 18px;
     margin-left: 0;
@@ -1208,42 +1282,52 @@ footer {
     flex: inherit;
     font-size: 15px;
   }
+
   .banner_img {
     width: 100%;
   }
+
   .banner_content {
     width: 100%;
     padding: 10px;
   }
+
   .banner_content p {
     justify-content: center;
     align-items: center;
     padding: 20px;
   }
+
   .footer_info {
     width: 100%;
     display: block;
     text-align: center;
   }
+
   .footer_content {
     display: block;
     text-align: center;
   }
+
   .footer_content img {
     text-align: center;
   }
-  .add_info, .tel_info {
+
+  .add_info,
+  .tel_info {
     display: block;
     padding: 20px 0;
     margin: 10px auto;
     text-align: center;
   }
+
   .footer_nav {
     display: block;
     padding: 20px 0;
     margin: 10px auto;
     text-align: center;
   }
+
   .footer_nav li {
     display: block;
     font-size: 16px;
