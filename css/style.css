@@ -199,14 +199,6 @@ body {
 .index_contents {
   width: 100%;
   margin: 150px auto;
-  transform: translate3d(0, 50px, 0);
-  transition: 1s;
-  opacity: 0;
-}
-
-.index_contents.animated {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
 }
 
 .index_headline {
@@ -384,22 +376,10 @@ body {
 
 .contact_banner {
   margin-top: 20px;
-  transform: translate3d(-50px, 0, 0);
-  transition: 1s;
-  opacity: 0;
 }
 
 .recruit_banner {
   margin-bottom: 50px;
-  transform: translate3d(50px, 0, 0);
-  transition: 1s;
-  opacity: 0;
-}
-
-.contact_banner.animated,
-.recruit_banner.animated {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
 }
 
 .banner_content {
