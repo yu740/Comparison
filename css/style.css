@@ -1260,14 +1260,14 @@ footer {
 
   .about_service {
     display: block;
-    justify-content: center;
-    margin-bottom: 200px;
+    margin: 0 auto 200px auto;
   }
 
   .service_contents {
     margin: 30px auto;
-    width: 350px;
+    width: 300px;
     height: auto;
+    text-align: center;
   }
 
   .about_culture {
