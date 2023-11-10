@@ -295,6 +295,7 @@ body {
 .index_works p {
   width: 80%;
   margin: 30px auto;
+  text-align: center;
 }
 
 #slider {
@@ -329,7 +330,7 @@ body {
   display: flex;
   border-bottom: 1px solid #AAAAAA;
   font-size: 16px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -460,11 +461,19 @@ body {
 
 .description {
   margin: 20px auto 100px auto;
+  text-align: center;
 }
 
 .page_description {
   width: 90%;
   margin: 50px auto;
+  text-align: center;
+}
+
+.description p {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .catchcopy {
@@ -812,7 +821,7 @@ body {
   width: 48px;
   display: inline-block;
   text-align: center;
-  background: #545454;
+  background: #ffbc00;
   color: #fff;
   font-size: 14px;
 }
@@ -855,6 +864,10 @@ body {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+}
+
+.form-btn:hover {
+  background: #ffbc00;
 }
 
 .select {
