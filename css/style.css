@@ -1316,18 +1316,17 @@ footer {
 
   .banner_button {
     display: block;
-    width: 100px;
+    width: 200px;
     /* ボタン幅 */
     border: 2px solid #fff;
     /* 線幅・種類・色 */
     color: #fff;
     /* 文字色 */
-    font-size: 10px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
     transition: 0.3s;
-    padding: 5px;
+    padding: 10px;
     margin-left: auto;
     margin-right: 10px;
   }
